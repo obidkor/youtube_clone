@@ -6,7 +6,7 @@ import { users, userDetail, editProfile, changePassword } from "../controller/us
 
  userRouter.get(routes.editProfile,editProfile);
  userRouter.get(routes.changePassword,changePassword);
- userRouter.get(routes.userDetail,userDetail);
+ userRouter.get(routes.userDetail(),userDetail);
  
 
 
