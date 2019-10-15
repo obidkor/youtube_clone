@@ -26,11 +26,17 @@ passport.use(
     {
       clientID: process.env.FB_ID,
       clientSecret: process.env.FB_SECRET,
-      callbackURL: `http://localhost:4000${routes.facebookCallback}`
+      callbackURL: `https://clever-snail-21.localtunnel.me${routes.facebookCallback}`,
+      profileFields: ["id", "displayName", "photos", "email"],
+      scope: ["public_profile", "email"]
     },
     facebookLoginCallback
   )
 );
 
-passport.serializeUser((user, done) => done(null, user));
-passport.deserializeUser((user, done) => done(null, user));
+// github 인증에서 email이 null로 저장될 경우에 쓸 것
+// 근데 이걸 쓰면 req.user에 사용자 쿠키가 저장이 안됨 ㅠㅠ
+// passport.serializeUser((user, done) => done(null, user));
+// passport.deserializeUser((user, done) => done(null, user));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());

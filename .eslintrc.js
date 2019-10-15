@@ -13,6 +13,10 @@ module.exports = {
     sourceType: "module"
   },
   rules: {
-    "no-console": "off"
+    "no-console": "off",
+    "no-underscore-dangle": "off"
+  },
+  env: {
+    browser: true
   }
 };
