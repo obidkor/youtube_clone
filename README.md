@@ -1,6 +1,6 @@
 # Youtube_Cloning!
 
-haha 75% complete!
+haha 85% complete!
 
 ## Paages :
 
@@ -10,7 +10,9 @@ haha 75% complete!
 - [x] Search
 - [x] User Detail
 - [x] Edit Profile
-- [ ] Change Password
+- [x] Change Password
 - [x] Upload
 - [x] Video Detail
 - [x] Edit Video
+- [x] Comment
+- [x] View count
