@@ -132,7 +132,8 @@ export const postEditProfile = async (req, res) => {
     await User.findByIdAndUpdate(req.user.id, {
       name,
       email,
-      avatarUrl: file ? file.path : req.user.avatarUrl
+      avatarUrl: file ? file.location : req.user.avatarUrl
+      // avatarUrl: file ? file.path : req.user.avatarUrl
     });
     // req.user에 쿠키가 저장안될경우(passport.js의 serialize)
     // findbyid에도(id를 _id로 바꿀것)
