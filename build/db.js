@@ -8,7 +8,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 _dotenv["default"].config();
 
-_mongoose["default"].connect(process.env.MONGO_URL, {
+_mongoose["default"].connect(process.env.PRODUCTION ? process.env.MONGO_URL : process.env.MONGO_URL1, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
