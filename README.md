@@ -1,6 +1,6 @@
 # Youtube_Cloning!
 
-haha 85% complete!
+deployment : https://shielded-anchorage-89037.herokuapp.com
 
 ## Paages :
 
@@ -16,3 +16,7 @@ haha 85% complete!
 - [x] Edit Video
 - [x] Comment
 - [x] View count
+
+## 주의사항
+
+facebook로그인이 developer 계정 문제로 안됨.
