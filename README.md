@@ -24,5 +24,6 @@ deployment : https://shielded-anchorage-89037.herokuapp.com
 ### videoplayer 문제
  1. 전체화면 문제 : 전체화면이 한번만 되고 그 후에 안됨. / 전체화면시 동영상이 모니터에 꽉 차지 않음
  2. 비디오 업타임을 받아오지 못함.
-### User profile에서 비디오 목록이 안보임
- - 비디오 목록에서 비디오가 안뜸.
+### 비디오가 안뜨는 현상
+ 1. User profile에서 비디오 목록에서 비디오가 안뜸.
+ 2. 검색시 목록에서 비디오가 안뜸.
